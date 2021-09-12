@@ -21,7 +21,7 @@ def preprocessing():
         for file in files:
             if (root != "images/gridded"): continue
             if file.endswith(".jpg") or file.endswith(".png"):
-                subprocess.run(["python3", "processor.py", "-i", os.path.join(root, file)])
+                subprocess.run(["python3", "main.py", "-i", os.path.join(root, file)])
 
 def main():
     preprocessing()
